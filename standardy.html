@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="bootstrap-5.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>LuxDeveloper</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand mt-3 mb-3" href="#"><img class="nabar-logo" src="images/cropped-Lux-Developer.png" alt="Developer"></a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav d-flex justify-content-end mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Strona główna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bmi.html">BMI</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="allegro.html">Allegro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="standardy.html">Standardy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home-offer">Inwestycje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home-gallery">Nasze atuty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-phone" href="tel:+487867654">+48 786 76 54</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="st">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col">
+                    <h3 class="mt-2">Stan surowy otwarty i zamknięty</h3>
+                    <a id="o1" class="btn btn-primary">Rozwiń</a>
+                    <p id="p1">Dom w stanie surowym to oczywiście dom niewykończony i bez instalacji. Warto mieć świadomość, że wszystkie terminy, którymi się tu posługujemy, a więc: stan surowy, stan surowy otwarty i stan surowy zamknięty to nie są żadne sformułowania prawne. Nie są to także pojęcia precyzyjne, którymi w ciemno można się posługiwać na przykład podczas negocjacji z firmą budowlaną czy deweloperem. Zwyczajowo przyjmuje się, że stan surowy otwarty/zamknięty obejmuje wymienione wyżej etapy prac, ale w przypadku różnych firm budowlanych i różnych deweloperów możliwe są drobne różnice. Dlatego zanim podpiszemy umowę, sprawdźmy co “nasz” deweloper rozumie pod tymi zwyczajowymi pojęciami. Unikniemy w ten sposób niepotrzebnych konfliktów, dokładnie określimy jakie prace obejmuje doprowadzenie inwestycji do stanu surowego zamkniętego i jakie prace zostaną wdrożone, kiedy ów stan zostanie osiągnięty. </p>
+                    <h3 class="mt-4">Stan deweloperski</h3>
+                    <a id="o2" class="btn btn-primary">Rozwiń</a>
+                    <p id="p2">Za budynek w stanie deweloperskim uważa się taki, który jest całkowicie wykończony z zewnątrz, ma ocieplony dach i rozprowadzone instalacje. Ściany gotowe są do malowania a posadzki do wykonania podłóg. Jeśli przyjmuje się, że koszt budowy stanu surowego zamkniętego to nieco ponad połowa całych kosztów inwestycji, koszt stanu deweloperskiego to jakieś 70 %. Podobnie jak w przypadku wcześniejszych etapów budowy, nie istnieje ostra definicja stanu deweloperskiego, ale przyjmuje się, że to surowy stan domu lub mieszkania, który od razu umożliwia przystąpienie do prac wykończeniowych.</p>
+                    <h3 class="mt-4">Dom/mieszkanie pod klucz</h3>
+                    <a id="o3" class="btn btn-primary">Rozwiń</a>
+                    <p id="p3">Pakiet pod klucz to duża oszczędność czasu. To deweloper bierze na siebie zatrudnienie i skoordynowanie prac poszczególnych ekip pracowników. To deweloper dokonuje wyceny, ustala termin zakończenia prac –  my wpłacamy zaliczkę oraz wskazujemy elementy wyposażenia, które mają się znaleźć w naszym lokalu. Najczęściej mamy do wyboru ograniczoną liczbę materiałów wykończeniowych. Jeśli więc marzy nam się jakaś bardzo specyficzna aranżacja mieszkania/domu, może to być rozwiązanie niewykonalne – zawsze jednak warto zapytać o możliwość indywidualizacji projektu.</p>
+                    <script>
+                        function open1(){
+                            let pObj = document.getElementById('p1');
+                            pObj.classList.toggle("p-open");
+                            let bObj = document.getElementById('o1');
+                            if(bObj.innerHTML == 'Rozwiń')
+                                bObj.innerHTML = 'Zwiń';
+                            else
+                                bObj.innerHTML = 'Rozwiń';
+                        }
+                        document.getElementById('o1').onclick = open1;
+                        function open2(){
+                            let pObj = document.getElementById('p2');
+                            pObj.classList.toggle("p-open");
+                            let bObj = document.getElementById('o2');
+                            if(bObj.innerHTML == 'Rozwiń')
+                                bObj.innerHTML = 'Zwiń';
+                            else
+                                bObj.innerHTML = 'Rozwiń';
+                        }
+                        document.getElementById('o2').onclick = open2;
+                        function open3(){
+                            let pObj = document.getElementById('p3');
+                            pObj.classList.toggle("p-open");
+                            let bObj = document.getElementById('o3');
+                            if(bObj.innerHTML == 'Rozwiń')
+                                bObj.innerHTML = 'Zwiń';
+                            else
+                                bObj.innerHTML = 'Rozwiń';
+                        }
+                        document.getElementById('o3').onclick = open3;
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="bootstrap-5.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

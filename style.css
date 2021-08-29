@@ -1,0 +1,66 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.nabar-logo{
+ width: 300px;
+}
+.navbar{
+    box-shadow: 0 0 2px #151515;
+}
+@media (min-width: 992px) {
+    .navbar-collapse{
+        width: auto;
+    }
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #151515;
+    font-size: 14px;
+    padding: 14px;
+    margin:0 4px;
+    border-bottom:1px solid #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #c00260;
+    border-bottom:1px solid #c00260;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: #c00260; 
+}
+.nav-phone{
+    background-color: #c00260;
+    color: #fff !important;
+    border-color:#c00260 !important;
+}
+#home-banner{
+    background-image: url('images/lycs-architecture-kUdbEEMcRwE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#home-banner .container-fluid{
+    background-color: rgba(0,0,0,0.7);
+    padding: 240px 0 100px 0;
+}
+#home-banner h1.display-6{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+#home-offer h3{
+    text-align: center;
+    margin: 20px 0;
+}
+#home-gallery img{
+    width: 100%;
+}
+.p-open{
+    display: block !important;
+}
+#st p{
+    display: none;
+}
